@@ -1,0 +1,266 @@
+/* RESET & BODY */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b0b0b;
+  padding: 10px 40px;
+  color: white;
+  border-bottom: 2px solid #ffd700;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  margin-right: 12px;
+  border-radius: 8px;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.brand-text .slogan {
+  font-size: 20px;
+  color: #ffd700;
+  margin: 2px 0 0 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/* TABLES SECTION */
+.tables {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+}
+
+.tables h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #0b0b0b;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.table {
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffd700;
+  border: 1px solid #222;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.table:hover {
+  background: #ffea00;
+  transform: scale(1.05);
+}
+
+.table.booked {
+  background: #ccc;
+  cursor: not-allowed;
+  color: #777;
+}
+
+/* Màu cho từng loại bàn */
+.table-8 {
+  background-color: #ffcc00; /* vàng đậm */
+}
+
+.table-4 {
+  background-color: #66ccff; /* xanh dương nhạt */
+}
+
+.table-3 {
+  background-color: #99ff99; /* xanh lá nhạt */
+}
+
+.table-2 {
+  background-color: #ff9999; /* đỏ hồng nhạt */
+}
+
+.table-1 {
+  background-color: #cc99ff; /* tím nhạt */
+}
+
+/* Hiệu ứng hover mỗi màu sáng hơn */
+.table-8:hover { background-color: #ffe066; }
+.table-4:hover { background-color: #99ddff; }
+.table-3:hover { background-color: #b3ffb3; }
+.table-2:hover { background-color: #ffb3b3; }
+.table-1:hover { background-color: #d6b3ff; }
+
+/* Giữ chung kiểu dáng */
+.table {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #000;
+}
+
+
+/* BOOKING FORM */
+.booking-form {
+  display: none;
+  background: white;
+  padding: 30px 25px;
+  max-width: 450px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.booking-form h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #0b0b0b;
+}
+
+.booking-form label {
+  display: block;
+  text-align: left;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #0b0b0b;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.booking-form button:hover {
+  background-color: #ffd700;
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #c5a46d;
+  padding: 50px 80px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  border-top: 2px solid #c5a46d;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #c5a46d;
+  padding-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  margin: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .table-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .booking-form {
+    margin: 20px;
+    padding: 20px;
+  }
+}

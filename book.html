@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Table - Foodaholic</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <!-- HEADER giống gallery.html -->
+  <header>
+    <div class="logo-container">
+      <img src="images/foursquare.png" alt="Logo" class="logo">
+      <div class="brand-text">
+        <h1>Foodaholic</h1>
+        <p class="slogan">By Fooder, For Fooder</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Back to Page</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tables">
+      <h2>Select a Table</h2>
+<div class="table-grid">
+  <!-- 2 bàn 8 người -->
+  <button class="table table-8" data-id="T1">Table 1 (8 people)</button>
+  <button class="table table-8" data-id="T2">Table 2 (8 people)</button>
+
+  <!-- 4 bàn 4 người -->
+  <button class="table table-4" data-id="T3">Table 3 (4 people)</button>
+  <button class="table table-4" data-id="T4">Table 4 (4 people)</button>
+  <button class="table table-4" data-id="T5">Table 5 (4 people)</button>
+  <button class="table table-4" data-id="T6">Table 6 (4 people)</button>
+
+  <!-- 4 bàn 2 người -->
+  <button class="table table-2" data-id="T7">Table 7 (2 people)</button>
+  <button class="table table-2" data-id="T8">Table 8 (2 people)</button>
+  <button class="table table-2" data-id="T9">Table 9 (2 people)</button>
+  <button class="table table-2" data-id="T10">Table 10 (2 people)</button>
+
+  <!-- 4 bàn 3 người -->
+  <button class="table table-3" data-id="T11">Table 11 (3 people)</button>
+  <button class="table table-3" data-id="T12">Table 12 (3 people)</button>
+  <button class="table table-3" data-id="T13">Table 13 (3 people)</button>
+  <button class="table table-3" data-id="T14">Table 14 (3 people)</button>
+
+  <!-- 2 bàn 1 người -->
+  <button class="table table-1" data-id="T15">Table 15 (1 person)</button>
+  <button class="table table-1" data-id="T16">Table 16 (1 person)</button>
+</div>
+
+      <section class="booking-form" id="bookingForm" style="display:none;">
+        <h2>Booking Information</h2>
+        <form id="formBooking">
+          <input type="hidden" name="table_id" id="tableInput">
+
+          <label>Full Name</label>
+          <input type="text" name="name" required>
+
+          <label>Phone</label>
+          <input type="text" name="phone" id="phoneInput" placeholder="e.g. 0912345678" required>
+
+          <label>Date</label>
+          <input type="date" name="date" id="dateInput" required>
+
+          <label>Booking Time</label>
+          <input type="time" name="time" id="timeInput" required>
+
+          <button type="submit">Confirm Booking</button>
+          <button type="button" id="cancelBookingBtn">Cancel Booking</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="book.js"></script>
+
+  <!-- FOOTER giống gallery.html -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>FOODAHOLIC RESTAURANT</h3>
+        <p>Address: 4th Floor - Indochina Mall  - 74 Bach Dang, Da Nang - Vietnam</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>OPENING TIMES</h3>
+        <p><strong>Open daily:</strong> From 14h30 Until 22h30<br>
+           <strong>Last order:</strong> 22h00</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>CONTACT US</h3>
+        <p>📞 Phone: (+84) 36 36363636<br>
+           📞 Hotline: +8418181818<br>
+           ✉️ Email: res@huyengia@gmail.com</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>OUR PROPERTIES</h3>
+        <p>Indochina Hotel<br>
+           Cloud Sky Bar<br>
+           JM Spa & Massage<br>
+           Foodaholic Cam Le</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Foodaholic Restaurant. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

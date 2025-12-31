@@ -1,0 +1,142 @@
+/* RESET & BODY */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b0b0b;
+  padding: 10px 40px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  margin-right: 12px;
+  border-radius: 8px;
+}
+
+.brand-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.brand-text .slogan {
+  font-size: 20px;
+  color: #ffd700;
+  margin: 2px 0 0 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/* GALLERY SECTION */
+.gallery-section {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
+  gap: 20px; /* khoảng cách giữa các ảnh */
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px; /* chiều cao bằng nhau */
+  object-fit: cover; /* ảnh không bị méo */
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #c5a46d;
+  padding: 50px 80px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  border-top: 2px solid #c5a46d;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #c5a46d;
+  padding-bottom: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  margin: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+.about-text h2 {
+    font-size: 36px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+  }
