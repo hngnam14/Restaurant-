@@ -39,7 +39,7 @@
     ```
 
 ### Bước 2: Cấu hình Database (Quan trọng)
-Bạn không cần import file, hãy làm theo các bước sau để khởi tạo dữ liệu:
+Làm theo các bước sau để khởi tạo dữ liệu:
 
 1.  Truy cập: `http://localhost/phpmyadmin`
 2.  Nhấn **New** (cột bên trái).
